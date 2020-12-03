@@ -7,7 +7,10 @@ module.exports = {
     applyComplexClasses: true,
   },
   purge: {
-    content: ['./**/*.php', './**/*.js'],
+    content: [
+      './resources/**/*.blade.php',
+      './resources/**/*.js',
+  ],
     whitelist: require('purgecss-with-wordpress').whitelist,
     whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
   },
